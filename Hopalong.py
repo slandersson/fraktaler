@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import matplotlib.style as style
 style.use('dark_background')
+
 npoints = 10000
 a= random.uniform(-50, 50)
 b= random.uniform(-50, 50)
@@ -26,7 +27,7 @@ for i in range(npoints):
 
 print "Output Created"
 fig = plt.gcf()
-fig.canvas.set_window_title('Hopalong a=%f b=%f c=%f' % (a,b,c))
+fig.canvas.set_window_title('Hopalong N=%i a=%f b=%f c=%f' % (npoints,a,b,c))
 plt.scatter(xlst, ylst, c=color, s=1, cmap=cm.jet)
 plt.axis('off')
 plt.show()
