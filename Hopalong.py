@@ -23,5 +23,6 @@ for i in range(npoints):
     xlst.append(x)
     ylst.append(y)
     color.append(i)
+print a, b, c
 plt.scatter(xlst, ylst, c=color, s=1, cmap=cm.jet)
 plt.show()
