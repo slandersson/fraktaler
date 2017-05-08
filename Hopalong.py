@@ -1,6 +1,9 @@
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import matplotlib.style as style
+style.use('dark_background')
 npoints = 10000
 a= random.uniform(-50, 50)
 b= random.uniform(-50, 50)
@@ -20,5 +23,5 @@ for i in range(npoints):
     xlst.append(x)
     ylst.append(y)
     color.append(i)
-plt.scatter(xlst, ylst, c=color, s=1)
+plt.scatter(xlst, ylst, c=color, s=1, cmap=cm.jet)
 plt.show()
